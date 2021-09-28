@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+.card__container {
+  /* width: 100%; */
+  height: 100%;
+  padding: 40px;
+  margin: 0;
+  box-sizing: border-box; /* box-sizing => border-box屬性長寬包含了div的padding以及border */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card {
+  width: 420px;
+  height: 280px;
+  padding: 25px;
+  margin: 20px auto;
+  position: relative;
+  background: linear-gradient(#f2f2f2, #eee);
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  transition: all 0.5s;
+  text-align: left !important;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.card__name {
+  padding-top: 11px;
+  font-size: 35px;
+  font-weight: bold;
+  /* margin-left: -3px; */
+  letter-spacing: 3px;
+  color: #666;
+}
+
+.card__eName {
+  color: #666;
+  font-size: 20px;
+  padding: 1px 0;
+}
+
+.card__job {
+  font-size: 20px;
+  color: #83a4ca;
+  font-weight: 700;
+}
+
+.card__detail--intro {
+  letter-spacing: 1px;
+  line-height: 22px;
+  padding: 0; /* 將文字的padding,margin改成0 */
+  margin: 0;
+  color: #666;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+hr {
+  margin: 10px 0;
+}
+
+.card__detail {
+  /* margin-top: 5px; */
+  padding-right: 120px;
+}
+
+.link-container {
+  margin-top: 50px;
+  height: 10%;
+}
+
+.link {
+  display: block;
+  text-align: center;
+  font-weight: 800;
+  text-decoration: none;
+  color: #666;
+  transition: all 0.5s;
+}
+
+.wave {
+  width: 700px;
+  height: 700px;
+  opacity: 0.4;
+  position: absolute;
+  left: 0;
+  background: #83a4ca;
+  border-radius: 40%;
+  /* transform-origin: 50% 48%; */
+  transition: left 2s;
+  animation: drift 6000ms infinite linear;
+  margin-left: 310px;
+}
+
+.wave.-three {
+  animation: drift 7000ms infinite linear;
+  margin-left: 300px;
+}
+
+.wave.-two {
+  animation: drift 10000ms infinite linear;
+  background-color: rgb(163, 17, 189);
+  opacity: 0.1;
+  margin-left: 290px;
+}
+
+.wave.right {
+  margin-top: -250px;
+}
+
+@keyframes drift {
+  from {
+    transform: rotate(0deg);
+  }
+  from {
+    transform: rotate(360deg);
+  }
+}
+
+.card:hover {
+  transform: translate3d(-5px, -5px, 0);
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+  /* 滑鼠碰觸時讓卡片向左上飄移 */
+  cursor: pointer;
+}
+
+.card:hover .wave.right {
+  left: 70px;
+}
+
+.link:hover {
+  color: #36b9c1;
+  font-size: 20px;
+}

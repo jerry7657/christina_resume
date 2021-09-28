@@ -49,14 +49,14 @@ const About = () => {
                   {paragraphThree || 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'}
                 </p>
                 {resume && (
-                  <span className="d-flex mt-3">
+                  <span className="d-flex mt-3 align-self-center">
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
                       className="cta-btn cta-btn--resume"
                       href={resume}
                     >
-                      Resume
+                      Résumé
                     </a>
                   </span>
                 )}
