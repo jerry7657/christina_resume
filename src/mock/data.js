@@ -50,6 +50,7 @@ export const projectsData = [
     tab: '',
     info3:
       '2. 另一個面向是檢視產品的介面與互動設計：\n\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0⎼ 互動地圖(Interaction Map)、\n\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0⎼ 準則性評估（Heuristics Evaluation）\n\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0⎼ 易用性測試（Usability Test）',
+    info4: '',
     url: '',
     repo: '', // if no repo, the button will not show up
   },
@@ -61,6 +62,7 @@ export const projectsData = [
     info2: '',
     tab: '',
     info3: '',
+    info4: '',
     url: '',
     repo: '', // if no repo, the button will not show up
   },
@@ -75,6 +77,7 @@ export const projectsData = [
     list: '從他人身上學習新技能或知識，有團體約束力，幫助持續學習既有技能。',
     info3:
       '針對托特使用者的特質光譜，依照進行知識交流的動機不同分為三種類型的使用者，依照其重視的功能與內容製作出三位persona。',
+    info4: '',
     url: '',
     repo: '', // if no repo, the button will not show up
   },
@@ -88,6 +91,7 @@ export const projectsData = [
     tab: '',
     info3:
       '\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0研究限制：不是每個人都用過所有的預選類競品產品，以敘述的方式讓團隊成員理解互動有限制性，因此在投票過程可能產生偏誤。',
+    info4: '',
     url: '',
     repo: '', // if no repo, the button will not show up
   },
