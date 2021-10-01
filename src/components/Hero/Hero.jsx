@@ -2,12 +2,12 @@ import React, { useContext, useState, useEffect } from 'react';
 // import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import { Link } from 'react-scroll';
-import '../../style/components/namecard.css';
+import '../../style/components/namecard.scss';
 import PortfolioContext from '../../context/context';
 
 const Header = () => {
   const { hero } = useContext(PortfolioContext);
-  const { title, name, subtitle, cta } = hero;
+  const { title, name, subtitle } = hero;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -52,13 +52,19 @@ const Header = () => {
         </Link>
 
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
-          <p className="hero-cta">
-            <span className="cta-btn cta-btn--hero">
-              <Link to="projects" smooth duration={1000}>
-                {cta || 'Know more'}
-              </Link>
-            </span>
-          </p>
+          {/* <p className="hero-cta">
+            <span className="cta-btn cta-btn--hero"> */}
+          <Link to="projects" smooth duration={1000}>
+            {/* {cta || 'Know more'} */}
+            <button type="button" className="learn-more">
+              <span className="circle" aria-hidden="true">
+                <span className="icon arrow" />
+              </span>
+              <span className="button-text">Learn More</span>
+            </button>
+          </Link>
+          {/* </span>
+          </p> */}
         </Fade>
       </div>
 

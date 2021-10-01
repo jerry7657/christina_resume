@@ -16,7 +16,7 @@
   width: 420px;
   height: 280px;
   padding: 25px;
-  margin: 20px auto;
+  margin: 20px auto 30px auto;
   position: relative;
   background: linear-gradient(#f2f2f2, #eee);
   overflow: hidden;
@@ -135,4 +135,63 @@ hr {
 .link:hover {
   color: #36b9c1;
   font-size: 20px;
+}
+
+@media screen and (max-width: 500px) {
+  .card {
+    width: 300px;
+    height: 200px;
+    padding: 15px;
+  }
+
+  .card__name {
+    padding-top: 0px;
+    font-size: 30px;
+  }
+
+  .card__eName {
+    color: #666;
+    font-size: 15px;
+    padding: 1px 0;
+  }
+
+  .card__job {
+    font-size: 15px;
+    color: #83a4ca;
+    font-weight: 700;
+  }
+
+  .card__detail {
+    padding-right: 90px;
+  }
+
+  .card__detail--intro {
+    letter-spacing: 0.5px;
+    line-height: 18px;
+    padding: 0; /* 將文字的padding,margin改成0 */
+    margin: 0;
+    color: #666;
+    font-size: 10px;
+    font-weight: 400;
+  }
+
+  hr {
+    margin: 5px 0;
+  }
+
+  .wave {
+    margin-left: 250px;
+  }
+  .wave.-three {
+    animation: drift 7000ms infinite linear;
+    margin-left: 260px;
+  }
+
+  .wave.-two {
+    margin-left: 240px;
+  }
+
+  .card:hover .wave.right {
+    left: 10px;
+  }
 }
